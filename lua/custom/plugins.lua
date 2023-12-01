@@ -17,7 +17,16 @@ local plugins = {
 
     config = function()
       require "plugins.configs.lspconfig"
+      require "custom.configs.lspconfig"
     end,
+  },
+  {
+    "williamboman/mason.nvim",
+    opts = {
+      ensure_installed = {
+        "rust-analyzer"
+      }
+    }
   },
   {
     "saecki/crates.nvim",
@@ -39,6 +48,11 @@ local plugins = {
     init = function ()
       vim.g.rustfmt_autosave = 1
     end
+  },
+  {
+    "simrat39/rust-tools.nvim",
+    ft = "rust",
+    dependencies = "neovim/nvim-lspconfig",
   }
 }
 
