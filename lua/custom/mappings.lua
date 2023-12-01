@@ -11,19 +11,19 @@ M.disabled = {
 M.abc = {
   n = {
       ["<leader>pf"] = {":Telescope find_files <CR>", "Telescope Files"},
-      ["<C-w>"] = ":w <CR>",
-      ["<leader>["] = ":bp <CR>",
-      ["<leader>]"] = ":bn <CR>",
-      ["<leader>bd"] = ":bd <CR>:bp <CR>",
-      ["<leader>py"] = "\"+y",
-      ["<leader>pp"] = "\"+p",
-      ["<leader>pP"] = "\"+P",
-      ["<leader>pg"] = ":LazyGit <CR>"
+      ["<C-w>"] = {":w <CR>", "Close"},
+      ["<leader>["] = {":bp <CR>", "Previous Buffer"},
+      ["<leader>]"] = {":bn <CR>", "Next Buffer"},
+      ["<leader>bd"] = {":bd <CR>:bp <CR>", "Close Buffer"},
+      ["<leader>py"] = {"\"+y"},
+      ["<leader>pp"] = {"\"+p"},
+      ["<leader>pP"] = {"\"+P"},
+      ["<leader>pg"] = {":LazyGit <CR>", "LazyGit"}
   },
   v = {
-      ["<leader>py"] = "\"+y",
-      ["<leader>pp"] = "\"+p",
-      ["<leader>pP"] = "\"+P"
+      ["<leader>py"] = {"\"+y"},
+      ["<leader>pp"] = {"\"+p"},
+      ["<leader>pP"] = {"\"+P"}
   }
 }
 
