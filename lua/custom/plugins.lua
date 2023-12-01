@@ -27,6 +27,12 @@ local plugins = {
       require("crates").setup()
     end,
   },
+  {
+    "nvim-tree/nvim-tree.lua",
+    config = function()
+      require "custom.configs.nvimtree"
+    end,
+  }
 }
 
 return plugins
